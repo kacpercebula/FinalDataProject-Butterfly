@@ -9,7 +9,7 @@ library(insight)
 
 rm(list = ls())
 
-setwd("~/DATA-331/FinalProject/cabbage_butterfly-main/data")
+setwd("~/DATA-331/FinalDataProject-Butterfly/data")
 
 dfPieris <- read_excel("CompletePierisData_2022-03-09.xlsx", .name_repair = "universal")
 
