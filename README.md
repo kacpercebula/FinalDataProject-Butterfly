@@ -31,8 +31,7 @@ Any advise for common problems or issues.
 
 Contributors names
 
-ex. Lina Maatouk 
-ex. Kacper Cebula
+Lina Maatouk & Kacper Cebula
 
 ## Version History
 
