@@ -134,7 +134,7 @@ dfFinalSexComparison$values <- as.numeric(dfFinalSexComparison$values)
 
 # Create the side-by-side bar chart using ggplot2
 plGenderComparison <- ggplot(dfFinalSexComparison, aes(x = characteristics, y = values, fill = gender)) +
-  geom_col(position = "dodge")
+  geom_col(position = "dodge", color = "black")
 plGenderComparison + labs(x = "Characteristics", y = "Values (mm)", fill = "Gender") + ggtitle("Gender Comparison")
 
 ###Question 1 done
@@ -176,7 +176,7 @@ dfLocationAnt <- dfLocationAnt %>%
 ##Plots
 # Length plot
 plLatitudeWingLength <- ggplot(dfLocationWings, aes(x = DecimalLatitudeUpdated, y = WingLength)) +
-   geom_point(color = "darkblue") + geom_smooth()
+   geom_point(color = "blue") + geom_smooth()
 plLatitudeWingLength + labs(y = "Wing Length (mm)", x = "Decimal Latitude") + ggtitle("Decimal Latitude vs. Wing Length")
 
 # Width plot
@@ -191,7 +191,7 @@ plLatitudeApex + labs(y = "Apex Location", x = "Decimal Latitude") + ggtitle("De
 
 # Spot plot
 plLatitudeAnt <- ggplot(dfLocationAnt, aes(x = DecimalLatitudeUpdated, y = AnteriorSpot)) +
-  geom_point(color = "yellow") + geom_smooth()
+  geom_point(color = "purple") + geom_smooth()
 plLatitudeAnt + labs(y = "Anteior Spot Location", x = "Decimal Latitude") + ggtitle("Decimal Latitude vs. Anterior Spot Location")
 
 ### Question 2 done
@@ -216,7 +216,7 @@ dfApexSpotCompare <- dfApexSpotCompare %>%
 
 # Apex Spot plot 
 plApexSpot <- ggplot(dfApexSpotCompare, aes(x = Apex, y = Spot)) +
-  geom_point(color = "red") + geom_smooth(method=lm, se=FALSE)
+  geom_point(color = "darkred") + geom_smooth(method=lm, se=FALSE)
 plApexSpot + labs(y = "Spot (mm)", x = "Apex (mm)") + ggtitle("Apex area vs. Anterior Spot")
 
 ###Questions 3 done
@@ -273,7 +273,7 @@ dfYearAnterior <- dfYearAnterior %>%
 ##Plots
 # Length plot 
 plYearWingLength <- ggplot(dfYearWing, aes(x = YearUpdated, y = WingLength)) + 
-  geom_point(color = "darkblue") + geom_smooth()
+  geom_point(color = "blue") + geom_smooth()
 plYearWingLength + labs(y = "Wing Length (mm)", x = "Year") + ggtitle("How does Year affect Wing Length?")
 
 # Width plot
@@ -288,7 +288,7 @@ plYearApex + labs(y = "Apex (mm)", x = "Year") + ggtitle("How does Year affect A
 
 # Spot plot 
 plYearSpot <- ggplot(dfYearAnterior, aes(x = YearUpdated, y = AnteriorSpotM3)) + 
-  geom_point(color = "yellow") + geom_smooth()
+  geom_point(color = "purple") + geom_smooth()
 plYearSpot + labs(y = "Anterior Spot (mm)", x = "Year") + ggtitle("How does Year affect Anterior Spot?")
 
 ###Question 4 done
