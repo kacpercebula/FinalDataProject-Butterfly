@@ -29,8 +29,6 @@ Any advise for common problems or issues.
 
 ## Authors
 
-Contributors names
-
 Lina Maatouk & Kacper Cebula
 
 ## Version History
