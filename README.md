@@ -36,7 +36,7 @@ Lina Maatouk & Kacper Cebula
 * 1.0
     * Initial Release
 
-## License:
+## License
 
 MIT License
 Copyright (c) 2021 Searchable Team
