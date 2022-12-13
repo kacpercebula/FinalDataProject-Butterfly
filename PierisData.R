@@ -1,7 +1,5 @@
 library(readxl)
 library(dplyr)
-library(tidyverse)
-library(lubridate)
 library(ggplot2)
 library(knitr)
 library(insight)
@@ -9,7 +7,8 @@ library(insight)
 
 rm(list = ls())
 
-setwd("~/PierisData")
+#Set your working directory
+setwd("~/DATA-331/FinalDataProject-Butterfly/data")
 
 dfPieris <- read_excel("CompletePierisData_2022-03-09.xlsx", .name_repair = "universal")
 
@@ -23,11 +22,6 @@ dfPieris[dfPieris == 'female'] <- 'F'
 dfPieris[dfPieris == 'F?'] <- 'F'
 dfPieris[dfPieris == 'Female'] <- 'F'
 dfPieris[dfPieris == 'Female?'] <- 'F'
-
-#excluding null values
-!dfPieris==" "
-!dfPieris=="unknown"
-!dfPieris=="N/A"
 
 #making numeric values
 dfPieris$LWingLength <- as.numeric(dfPieris$LWingLength)
