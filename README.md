@@ -1,31 +1,28 @@
 # FinalDataProject-Butterfly
 
-Simple overview of use/purpose.
-
 ## Description
 
 An in-depth paragraph about your project and overview of use.
 
-## Getting Started
-
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+* RStudio with readxl, dplyr, ggplot2, knitr, insight libraries installed.
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* Download all the files from github and make sure it is all in one file.
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+* Open RStudio
+* Click "Open an existing project"
+* Select the PierisData.R
+* Set the working directory in the beginning of the code
+* Run the program
 
 ## Help
 
-Any advise for common problems or issues.
+Make sure to set working directory properly and have the necessary libraries installed.
 
 ## Authors
 
