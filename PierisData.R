@@ -9,7 +9,7 @@ library(insight)
 
 rm(list = ls())
 
-setwd("~/DATA-331/FinalDataProject-Butterfly/data")
+setwd("~/PierisData")
 
 dfPieris <- read_excel("CompletePierisData_2022-03-09.xlsx", .name_repair = "universal")
 
@@ -292,3 +292,7 @@ plYearSpot <- ggplot(dfYearAnterior, aes(x = YearUpdated, y = AnteriorSpotM3)) +
 plYearSpot + labs(y = "Anterior Spot (mm)", x = "Year") + ggtitle("How does Year affect Anterior Spot?")
 
 ###Question 4 done
+
+#T-test: find the mean male LWingLength 
+t.test(dfWingM$LWingLength, mu= mean(dfWingM$LWingLength), alternative = "less")
+dim(dfWingM)
