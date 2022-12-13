@@ -2,8 +2,26 @@
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
-
+This project shows the butterfly data collected and answers the following questions:
+   1. How does gender affect:
+      a. Wing Length 
+      b. Wing Width
+      c. Apex
+      d. Spot
+      
+   2. How does the year affect:
+      a. Wing Length 
+      b. Wing Width
+      c. Apex
+      d. Spot
+      
+   3. How does decimal latitude affect:
+      a. Wing Length 
+      b. Wing Width
+      c. Apex
+      d. Spot
+      
+   4. What is the relationship between apex and spot?
 ### Dependencies
 
 * RStudio with readxl, dplyr, ggplot2, knitr, insight libraries installed.
